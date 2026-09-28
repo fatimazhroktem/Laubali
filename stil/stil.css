@@ -1,0 +1,1097 @@
+*{
+	margin:0px;
+	padding: 0px;
+	list-style-type: none;
+	width: auto;
+}
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-indent: 24px;
+}
+h1 h2 h3 h4 h5 h6{
+	font-family: 'Playfair Display', serif;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+mark{
+	margin-left: 17px;
+}
+.logo{
+	padding: 5px;
+}
+.motto{
+	margin: 20px;
+	margin-top: -33px;
+	text-align: center;
+	color:#649C03;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#submit{
+	cursor: pointer;
+}
+.phptitle{
+	text-align: center;
+	font-size: 20px;
+	color: #06084c;
+	font-family: 'Teko', sans-serif;
+	font-size: 24px;
+	font-size: 36px;
+}
+.animationwriter{
+	overflow: hidden;
+	border-right: 2px solid;
+	white-space: nowrap;
+	margin:0 auto;
+	user-select: none;
+	animation: typing 3.5s steps(70, end),
+				blink-caret 1s step-end infinite;
+}
+@keyframes typing{
+	from{
+		width: 0;
+	}
+	to{
+		width: 35%;
+	}
+}
+@keyframes blink-caret{
+	15%{
+		border-color: transparent;
+	}
+}
+.kullanicionline{
+	font-size: 15px;
+	padding: 10px;	
+	font-family: 'Audiowide', cursive;
+}
+.title{
+	margin: 10px;
+	color: white;
+	font-size: 24px;
+	border-bottom: 2px solid #4caf50;
+	text-align: center;
+}
+.link{
+	color: #D68282;
+	font-weight: bold;
+	padding: 10px;
+	line-height: 80px;
+	margin-left: 90px;
+	font-size: 20px;
+}
+.link ul li{
+	float: left;
+}
+.form{
+	margin-top: 50px;
+}
+.form textarea{
+	background: none;
+	border: 2px solid  #4caf50;
+	color: white;
+	padding: 2px 5px;
+	font-size:16px;
+}
+.form button{
+	margin: 0 30px; 
+	background: none;
+	width: 25%;
+	border: 2px solid  #4caf50;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+}
+ span{
+	color: white;
+	font-size: 18px;
+	margin-left: 70px;
+}
+ input{
+	background: none;
+	color: #AFA7A7;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px 7px;
+	border: 2px solid #4caf50;
+	margin: 3px 0;
+	border-radius: 5px;
+	width: 92%;
+}
+select{
+	border-radius: 5px;
+}
+.dogumgunu{
+	width: 24%;
+	background: none;
+	border: 2px solid  #4caf50;
+	color: white;
+	padding: 10px 7px;
+	font-size: 15px;
+	color: white;
+	background-color:black;
+}
+.dogumayi{
+	width: 40%;
+	background: none;
+	border: 2px solid  #4caf50;
+	color: white;
+	padding: 10px 7px;
+	font-size: 15px;
+	color: white;
+	background-color: black;
+}
+.dogumyili{
+	width: 32%;
+	background: none;
+	border: 2px solid  #4caf50;
+	color: white;
+	padding: 10px 7px;
+	font-size: 15px;
+	color: white;
+	background-color: black;
+}
+.btn{
+	background: none;
+	padding: 10px;
+	margin: -10px 180px;
+	border: 2px solid #4caf50;
+	font-size: 18px;
+	color: white;
+	width: 150px;
+	border-radius: 5px;
+}
+.alink{
+	color: #903B2A;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 180px;
+}
+.alink:hover{
+	text-decoration: underline;
+}
+.php{
+	color: white;
+	font-size: 20px;
+	margin-left:180px;
+	margin-top: 50px;
+}
+#php{
+	color: rgba(0,0,0,.9);	
+	font-family: 'Jura', sans-serif;
+}
+.mesaj{
+	margin-left: 25px;
+	margin-bottom: 60px;
+	border-bottom: 2px solid rgba(255,255,255,.5);
+}
+
+.profil{
+	border-radius: 50px;
+	float: right;
+	margin-top: -62px;
+	margin-right: 30px;
+}
+.uyarı{
+	color: #B11111;
+	font-weight:bold;
+	font-size: 14px;
+}
+.cıkıs{
+	border:2px solid #524E4E;
+	width: 70px;
+	height: 20px;
+	padding: 10px;
+	background-color:#222;
+	float: right;
+	margin-top: -55px;
+	margin-right: 20px;
+	border-radius: 30px;	
+}
+.cıkıs a{
+	font-weight: bold;
+	font-size: 17px;	
+	align-items: center;
+	color: #CE561B;
+}
+.classes {
+	background: #333;
+	height: 55px;
+	width: 80%;
+	padding: 20px;
+	margin:20px;
+	border: 2px solid #ffff00;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+}
+.classes a{
+	color: #E5E522;
+	font-size: 18px;
+	margin: 3px;
+	width: 20px;
+	transition: 0.7s all;
+}
+.classes a:hover{
+	text-decoration: underline;
+	font-size: 21px;
+	margin: 10px 0;
+	transition: 0.7s all;
+	color: #FFFC00;
+}
+.classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 54em;
+	margin-top: -74px;
+}
+.classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 60em;
+	margin-top: -103px;
+}
+.hata{
+	margin:0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 500% 500%;
+	animation: animeBG 2s linear infinite;
+	animation-direction: alternate;
+}
+@keyframes animeBG{
+	0%{background-position: 0%;}
+	100%{background-position: 100%;}
+}
+.not-found{
+	font-weight: 400;
+	text-align: center;
+	margin-top: 15%;
+	display: block;
+	color: #27322C;
+	font-size: 28px;
+	font-family: 'Langar', cursive;
+}
+.not-found i{
+	color: rgba(255,255,255,.7);
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	box-sizing: border-box;
+	margin: 0 270px ;
+}
+.not-found a{
+	color: #7F551E;
+	font-size: 23px;
+}
+.not-found a:hover{
+	text-decoration: underline;
+}
+.settingsall,.ana{
+	float: right;
+	text-align: center;
+	justify-content: center;
+	margin-top: -35px;
+	margin-right: 10px;
+	line-height: 40px;
+	color: #B2B2B2;
+	padding: 2px;
+	padding-right: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all 0.7s;
+}
+.settingsall a{
+	color: rgba(255,255,255,.9);
+
+}
+.settingsall a:hover{
+	text-decoration: underline rgba(255,255,255,.6);
+}
+.settingsall i:hover,.settings1 i:hover, .settings2 i:hover,.mesajlar i:hover,.ana i:hover{
+	color: #B2B2B2;
+}
+.settings {
+	display: flex;
+	flex-direction: column;
+	margin-top: -150%;
+	transition: all 0.7s;
+}
+ .ana{
+	display: block;
+	border:none;
+	margin-top: 145px;
+	margin-right:20px; 
+}
+#ana{
+	display: none;
+}
+#ana:checked ~ .settingsall {
+	transition: all 0.7s;
+	margin: 0;
+	margin-top: 360px;
+	margin-right: -20px;
+	
+}
+.online{
+	padding: 15px;
+	font-size: 20px;
+	font-family: 'Audiowide', cursive;
+	color: rgba(255,255,255,.9);
+}
+.online i{
+	font-size: 50px;
+	color: rgba(255,255,255,.8);
+	margin:40px 15px;
+}
+ .i{
+ 	color: white;
+}
+#dön{
+	font-size:18px;
+	margin-left: 210px;
+	padding: 20px;
+	color:#3ACAC5;
+	font-family: 'Audiowide', cursive;
+}
+#dön:hover{
+	text-decoration: underline;
+}
+.list1{
+	font-size: 20px;
+	padding:15px 30px;
+	color: #C1B1B1;
+	height: 28px;
+}
+.list{
+	font-size: 20px;
+	padding:15px 30px;
+	color: #C1B1B1;
+	height: 55px;
+}
+.list a ,.list1 a{
+	color: rgba(255,255,255,.9);
+}
+.list a:hover ,.list1 a:hover{
+	text-decoration: underline;
+}
+.list i{
+	color:  #4caf50;
+}
+.arrow{
+	padding: 0 10px;
+}
+.mesaj .list a:hover{
+	text-decoration:none;
+}
+.pp{
+	height: 200px;	
+}
+.uyeresim .profil{
+	float: none;
+	margin: 40px 30px;
+}
+.title{
+	font-family: 'Audiowide', cursive;
+}
+.genel{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+} 
+.genel a{
+	font-size:16px;
+	margin-left: 20px;
+	padding: 15px;
+	color:#3ACAC5;
+	font-family: 'Audiowide', cursive;
+}
+.genel a:hover{
+	text-decoration: underline;
+}
+.kayit_tarihi,.dogum_tarihi{
+	color: rgb(255,255,255,.9);
+	margin: -20px 17px 10px;
+}
+.yorum{
+	width: 85%;
+	margin: 5px auto;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.yorum table span{
+	color: #8a1b1b;
+	font-size: 16px;
+	background: #b9b7b7;
+	border:1.5px solid rgba(0,0,0,.7);
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	padding: 5px 13px;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;	
+}
+.yorum table p{
+	color:	rgba(0,0,0,.9);
+	font-size: 15px;
+	padding: 2px;
+	font-family: 'Jura', sans-serif;
+	display: flex;
+	margin-left: 280px;
+	margin-top: 20px;
+	padding: 0 10px;
+}
+.yorum  a{
+	padding: 10px;
+	color: rgb(0,0,0,.9);
+	margin-left: 240px;
+	font-size: 15px;
+} 
+.yorum a:first-child{
+	border:2px solid #855CD7;
+	border-radius: 20px;
+	background: #855CD7;
+	color: white;
+}
+.yorum a:hover{
+	text-decoration: underline;
+}
+.yanıtlar form .btn{
+	color: rgba(0,0,0,.9);
+	border: 2px solid #1D5B3F;
+}
+.user{
+	display: flex;
+}
+.user i{
+	padding: 5px;
+}
+.zaman i{
+	padding: 3px;
+}
+.yorum_icerik{
+	background: #b9b7b7;
+	width: 50%;
+	padding: 3px 6px;
+	margin: 15px 170px;
+	border: 2px solid rgba(0,0,0,.7);
+	color: #3b04ab;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+.yanıtlar .btn{
+	width: 25%;
+	margin:5px 330px;
+	background: #b9b7b7;
+	color: rgb(0,0,0,.9);
+	font-family: 'Jura', sans-serif;
+}
+.post{
+	text-align: center;
+	justify-content: center;
+}
+.post p{
+	float: left;
+	margin: 10px 20px;
+	margin-left: 100px;
+}
+.post h3 {
+	color: transparent;
+	-webkit-text-stroke: 1.5px #3b04ab;
+	margin-left: -150px;
+	padding: 10px;
+	letter-spacing: 2px;
+}
+.anapost{
+	color: white;
+	text-align: center;
+	justify-content: center;
+	float: none;
+	box-sizing: border-box;
+}
+.anapost p{
+	color: transparent;
+	-webkit-text-stroke:1.2px #222;
+	padding: 10px;
+	font-size: 16px;
+	margin-right: 10em;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.post hr{
+	margin-left: -200px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.span-post{
+	color: #3b04ab;
+	margin:0 5px;
+	text-align: left;
+	justify-content: center;
+	display: flex;
+}
+.span-post h5{
+	text-decoration: none;
+	margin-left: -900px;
+	color: #3b04ab;
+}
+.span-post a{
+	font-size: 17px;
+	color: #3b04ab;
+	text-decoration: underline;
+	border: 1px solid #39ba9e;
+	border-radius:5px;
+	width: auto;
+	padding: 3px;
+	background-color: #ddd;
+}
+.post-a{
+	float: right;
+	margin-top: -25px;
+	margin-right: 70px;
+}
+ .post-a a{
+	font-size: 20px;
+	color: #740dfd;
+	justify-content: center;
+	text-decoration: none;
+	border: none;
+	justify-content: center;
+	background: none;
+}
+ .post-a a:hover{
+	text-decoration: underline;
+}
+.like{
+	margin-left: 600px;
+}
+.like input{
+	display: none;
+}
+.like #bir, #iki ,#üç, #dört{
+	cursor: pointer;
+	padding: 8px;
+}
+.like #dört {
+	color: #e01a1a;
+}
+.like #üç {
+	color: #5407ea;
+}
+.like #iki {
+	color: #1f8fb1;
+}
+.like #bir {
+	color: #5407ea;
+}
+#username{
+	background: #b9b7b7;
+	width: 50%;
+	padding: 3px 6px;
+	margin: -10px 170px;
+	border: 2px solid rgba(0,0,0,.7);
+	color: #3b04ab;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+#username::placeholder{
+	color: rgb(0,0,0,.9);
+}
+.comments{
+	width: 50%;
+	margin:50px 170px 50px;
+	padding: 15px 20px;
+	list-style-type: none;
+	height: auto;
+	}
+.comments > li{
+	width: auto;
+	margin: 30px 0;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 2px solid black;	
+	border-radius: 6px;
+	color: black;
+	}
+@media screen and (max-width: 1200px){
+	.link{
+	float: none;	
+	margin: 10px;
+	flex-direction: column;
+	line-height: 50px;
+	padding: 10px;
+	}	
+	.settingsall{
+		margin-top: -10px;
+	}
+	.settings{
+		margin-right: -45px;
+	}
+	.yorum{
+	width: 70%;
+	margin: 5px 120px;
+	text-align: center;
+}
+	.yorum table span{
+	font-size: 18px;
+	background: none;
+	border:none;
+	box-shadow: none;	
+	}
+	.yorum table p{
+	font-size: 16px;
+	margin-left: 170px;
+	margin-top: 20px;
+	}
+	.yorum a{
+	margin-left: 130px;
+	font-size: 16px;
+	}
+	.zaman{
+	font-size: 14px;
+	margin-left: 10px;
+}
+	.post p{
+	font-size: 16px;
+	margin: 5px;
+	padding: 10px 10px;
+	margin-left: 60px;
+}
+	.span-post h5{
+	text-decoration: none;
+	margin-left: -860px;
+	color: #3b04ab;
+}
+	.yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: #b9b7b7;
+	color: rgb(0,0,0,.9);
+	font-family: 'Jura', sans-serif;
+}
+	.like{
+	margin: 100px 10px -80px 510px;
+}
+	.yorum_icerik{
+	background: #b9b7b7;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 0px -100px -70px -110px;
+	border: 2px solid #4caf50;
+	color: #3b04ab;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	#username{
+	background: #b9b7b7;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px -10px -110px;
+	border: 2px solid #4caf50;
+	color: #3b04ab;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	.comments > li{
+	width: 1040px;
+	margin: 30px 0 0 -350px;
+	color: black;
+	}
+	.classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 47em;
+	margin-top: -74px;
+}
+	.classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 53em;
+	margin-top: -103px;
+}
+}
+@media screen and (max-width: 1150px){
+	.not-found{
+		font-size: 22px;
+		margin-top:24% ;
+	}
+	.not-found i{
+	margin: 0 150px ;
+}
+	.not-found a{
+	font-size: 19px;
+}
+	.settingsall{
+		margin-right: 65px;
+	}
+	.settings{
+		margin-right: -55px;
+	}
+	.yorum{
+	width: 90%;
+	margin: 5px 20px;
+	text-align: center;
+}
+	.yorum table span{
+	font-size: 18px;
+	background: none;
+	border:none;
+	box-shadow: none;	
+	}
+	.yorum table p{
+	font-size: 16px;
+	margin-left: 80px;
+	margin-top: 20px;
+	}
+	.yorum a{
+	margin-left: 40px;
+	font-size: 16px;
+	}
+	.zaman{
+	font-size: 14px;
+	margin-left: 10px;
+}
+	.post p{
+	font-size: 16px;
+	margin: 5px;
+	padding: 10px 10px;
+}
+	.span-post h5{
+	text-decoration: none;
+	margin-left: -540px;
+	color: #3b04ab;
+}
+	.yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: #b9b7b7;
+	color: rgb(0,0,0,.9);
+	font-family: 'Jura', sans-serif;
+}
+	.like{
+	margin: 100px 10px -120px 350px;
+}
+	.yorum_icerik{
+	background: #b9b7b7;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 0px -100px -100px -110px;
+	border: 2px solid #4caf50;
+	color: #3b04ab;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	#username{
+	background: #b9b7b7;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px 0px -110px;
+	border: 2px solid #4caf50;
+	color: #3b04ab;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	.comments > li{
+	width: 800px;
+	margin: 30px 0 0 -350px;
+	color: black;
+	}
+	.classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 33em;
+	margin-top: -74px;
+}
+	.classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 39em;
+	margin-top: -103px;
+}
+}
+@media screen and (max-width: 870px){
+	.yorum{
+	width: 95%;
+	margin: 5px 13px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+	.yorum table span{
+	font-size: 17px;
+	background: none;
+	border:none;
+	box-shadow: none;	
+	}
+	.yorum table p{
+	font-size: 15px;
+	margin-left: 80px;
+	margin-top: 20px;
+	}
+	.yorum a{
+	margin-left: 40px;
+	font-size: 15px;
+	}
+	.zaman{
+	font-size: 14px;
+	margin-left: 10px;
+}
+	.post p{
+	font-size: 14px;
+	margin: 5px;
+	padding: 10px 10px;
+}
+	.span-post h5{
+	text-decoration: none;
+	margin-left: -300px;
+	color: #3b04ab;
+}
+	.span-post a{
+	font-size: 17px;
+}
+	.post-a{
+	float: none;
+	margin-top: 25px;
+	margin-left: -300px;
+}
+ 	.post-a a{
+	font-size: 18px;
+	color: #740dfd;
+	justify-content: center;
+	text-decoration: none;
+	border: none;
+	justify-content: center;
+	background: none;
+}	
+	.yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: #b9b7b7;
+	color: rgb(0,0,0,.9);
+	font-family: 'Jura', sans-serif;
+}
+	.like{
+	margin: 100px 10px -120px 110px;
+}
+	.yorum_icerik{
+	background: #b9b7b7;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 0px -100px -100px -110px;
+	border: 2px solid #4caf50;
+	color: #3b04ab;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	#username{
+	background: #b9b7b7;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px -10px -110px;
+	border: 2px solid #4caf50;
+	color: #3b04ab;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	.comments > li{
+	width: 540px;
+	margin: 30px 0 0 -350px;
+	color: black;
+	}
+	.classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 19em;
+	margin-top: -74px;
+}
+	.classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 25em;
+	margin-top: -103px;
+}
+	}
+@media screen and (max-width: 620px){
+	.not-found{
+	font-size: 20px;
+	margin-top:46% ;
+	}
+	.not-found i{
+	margin: 0 100px ;
+}
+	.not-found a{
+	font-size: 18px;
+}
+	.phptitle{
+	font-size: 26px;
+}
+	.kullanicionline{
+	font-size: 11px;
+}
+	.yorum{
+	width: 95%;
+	margin: 5px 13px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+	.yorum table span{
+	font-size: 15px;
+	background: none;
+	border:none;
+	box-shadow: none;	
+	}
+	.yorum table p{
+	font-size: 13px;
+	margin-left: 30px;
+	margin-top: 20px;
+	}
+	.yorum a{
+	margin-left: 40px;
+	font-size: 13px;
+	}
+	.zaman{
+	font-size: 14px;
+	margin-left: -5px;
+}	
+	.post p{
+	font-size: 14px;
+	margin: 5px;
+	padding: 10px 10px;
+}
+	.anapost p{
+	padding: 0px;
+	margin-left: -10em;
+	margin-right: 0;
+	letter-spacing: 1.2px;
+	line-height: 28px;
+	}
+	.span-post h5{
+	text-decoration: none;
+	margin-left: -190px;
+	color: #3b04ab;
+}
+	.span-post a{
+	font-size: 13px;
+}
+	.post-a{
+	float: none;
+	margin-top: 25px;
+	margin-left: -300px;
+}
+ 	.post-a a{
+	font-size: 18px;
+	color: #740dfd;
+	justify-content: center;
+	text-decoration: none;
+	border: none;
+	justify-content: center;
+	background: none;
+}
+	.yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: #b9b7b7;
+	color: rgb(0,0,0,.9);
+	font-family: 'Jura', sans-serif;
+}
+	.like{
+	margin: 100px 10px -120px 0px;
+}
+	.yorum_icerik{
+	background: #b9b7b7;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 80px -100px -100px -240px;
+	border: 2px solid #4caf50;
+	color: #3b04ab;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	#username{
+	background: #b9b7b7;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px -10px -110px;
+	border: 2px solid rgba(0,0,0,.7);
+	color: #3b04ab;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	.comments > li{
+	width: 340px;
+	margin: 30px 0 0 -350px;
+	color: black;
+	}
+	.classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 11em;
+	margin-top: -74px;
+}
+	.classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 17em;
+	margin-top: -103px;
+}
+}
+
+/*LogOutButton*/
+@media screen and (max-width: 800px){
+	.logoutButton{
+		top: 5px !important;
+	}
+}
+@media screen and (max-width: 730px){
+	.logoutButton{
+		top: 5px !important;	
+	}
+}
+@media screen and (max-width: 660px){
+	.logoutButton{
+		top: -10px !important;	
+	}
+}
+@media screen and (max-width: 600px){
+	.logoutButton{
+		top: -10px !important;	
+	}
+}
+@media screen and (max-width: 580px){
+	.logoutButton{
+		top: -10px !important;	
+	}
+}
+@media screen and (max-width: 520px){
+	.logoutButton{
+		top: -10px !important;	
+	}
+}
+@media screen and (max-width: 500px){
+	.logoutButton{
+		top: -13px !important;	
+	}
+}
+

@@ -1,0 +1,29 @@
+# İşletim sistemi artıkları
+desktop.ini
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# IDE ve metin editörü ayarları
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arama motoru site doğrulama dosyaları
+google*.html
+
+# Yüklenen ortam dosyaları (.gitkeep hariç)
+/upload/*
+!/upload/.gitkeep
+
+# Sunucu ve log kayıtları
+*.log
+error_log
+access_log
+
+# Geçici dosyalar ve yedekler
+*.tmp
+*.bak
+*.swp
+*~

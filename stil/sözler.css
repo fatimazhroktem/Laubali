@@ -1,0 +1,52 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+p{
+	text-indent: 24px;
+}
+a{
+	text-decoration: none;
+	color:#1CE939;
+}
+.gorsel{
+	height: 600px;
+	background-size:1100px;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-attachment:fixed;
+	justify-content:space-around;
+}
+.cıkıs{
+	border:2px solid #524E4E;
+	width: 70px;
+	height: 20px;
+	padding: 10px;
+	background-color:#222;
+	float: right;
+	margin-top: -55px;
+	margin-right: 20px;
+	border-radius: 30px;	
+}
+.cıkıs a{
+	font-weight: bold;
+	font-size: 17px;	
+	align-items: center;
+	color: #CE561B;
+}
+.yazı blockquote{
+	padding: 20px;
+	margin:15px 80px;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+ 	letter-spacing: 0.7px;
+	line-height: 25px;
+	text-shadow: 1.5px 1px 4px black;
+	border: 0.1px solid  #22a7ba;
+	border-radius: 15px;
+	box-shadow: 2px 2px 3px #7c0ee0;
+	font-family: 'Amiri', serif;
+}
+
+

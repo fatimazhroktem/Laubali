@@ -1,0 +1,259 @@
+header{
+	width: 100%;
+}
+.text{
+	border: 2px solid black;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.text h2{
+	color: #A14242;
+}
+.text h3{
+	margin-top: -25px;
+	float: right;
+	font-size: 15px;
+}
+.text{
+	text-indent: 24px;
+	padding: 20px;
+	font-size: 17px;
+}
+.text pre{
+	text-indent: 10px;
+	padding: 15px;
+}
+.text ul li{
+	list-style-type: none;
+}
+.text a{
+	text-decoration: none;
+	float: right;
+	}
+.text img{
+	float: left;
+	padding: 10px;
+}
+p{
+	font-size: 17px;
+}
+.gorsel{
+	height: 660px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-attachment:fixed;
+	justify-content:space-around;
+}
+nav.sticky{
+	transition: 0.7s;
+	padding: 5px 100px;
+	padding-bottom: 100px;
+	background-color: #333;
+	margin-left: 0;
+	height: 5vh;
+}
+nav.sticky ul li a{
+	color: white;
+	margin-bottom:20px;
+	transition: 1s;
+}
+nav.sticky ul li a:hover{
+	color: black;
+	background-color: white;
+}
+header label {
+	display: none;
+	width: 32px;
+	height: 32px;
+	padding: 10px;
+	border-right: 1px solid #ffffff;
+}
+header i{
+	margin: 8px;
+	cursor: pointer;
+}
+header i:hover{
+	color:white;
+}
+.menu ul li{
+	list-style-type: none;
+	float: left;
+}
+.menu{
+	transition: 0.7s;
+	height: 110px;
+	width: 100%;
+	align-items: center;
+	margin-left: 120px;
+	margin-top: -7px;
+	line-height: 140px;
+	overflow: hidden;
+	position: fixed;
+}
+.soz{
+margin-left: 120px;
+}
+.menu a{
+	color: white;
+	font-size:29px;
+	margin-left:15px;	
+	padding:12px 10px;
+	font-family: 'Teko', sans-serif;
+	text-shadow: 1px 3px 3px #5F5A5A;
+	transition: 0.04s;
+	text-decoration: none;
+}
+.menu a:hover{
+	background-color: none;
+	color:white;
+	transition: 0.40s;
+	border-radius: 30%;
+}
+#chk{
+	display: none;
+}
+/*Tablet Görünümü*/
+@media screen and (max-width: 1200px){
+	header label{
+		display: block;
+		color: white;
+		float: right;
+	}
+	.settingsall,.ana{
+	float: right;
+	text-align: center;
+	justify-content: center;
+	margin-top: -35px;
+	margin-right: -10px;
+	line-height: 40px;
+	color: #B2B2B2;
+	padding: 2px;
+	padding-right: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all 0.7s;
+}
+.settings {
+	display: flex;
+	flex-direction: column;
+	margin-top: -150%;
+	transition: all 0.7s;
+}
+ .ana{
+	display: block;
+	border:none;
+	margin-top: 145px;
+	margin-right:-40px; 
+}
+#ana{
+	display: none;
+}
+#ana:checked ~ .settingsall {
+	transition: all 0.7s;
+	margin: 0;
+	margin-top: 345px;
+	margin-right: -15px;
+	
+}
+	.menu{
+		position: absolute;
+		background-color: #333;
+		width: 30%;
+		height: 420px;
+		margin-top: -140%;
+		transition: all 0.7s;
+	}
+	.menu a{
+		color: white;
+		padding: 20px;
+		font-size: 28px;
+	}
+	.menu ul li{
+		float: none;
+		margin: 25px;
+	 	line-height: 30px;
+	 	margin-left: 10px;
+	 	flex-direction: column;
+	}
+	.box{
+		float: none;
+	}
+	#chk:checked ~ .menu{
+		margin: 0;
+		margin-left: -12px;
+		margin-top: -9px;
+	}
+}
+	/*Cep Telefonu Görünümü*/
+	@media screen and (max-width:1000px){
+	header label{
+		display: block;
+		color: white;
+		float: right;
+	}
+	.settingsall,.ana{
+	float: right;
+	text-align: center;
+	justify-content: center;
+	margin-top: -35px;
+	margin-right: -10px;
+	line-height: 40px;
+	color: #B2B2B2;
+	padding: 2px;
+	padding-right: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all 0.7s;
+}
+.settings {
+	display: flex;
+	flex-direction: column;
+	margin-top: -150%;
+	transition: all 0.7s;
+}
+ .ana{
+	display: block;
+	border:none;
+	margin-top: 145px;
+	margin-right:-40px; 
+}
+#ana{
+	display: none;
+}
+#ana:checked ~ .settingsall {
+	transition: all 0.7s;
+	margin: 0;
+	margin-top: 345px;
+	margin-right: -5px;
+}
+	.menu{
+		position: absolute;
+		background-color: #333;
+		width: auto;
+		height: 420px;
+		margin-top: -140%;
+		transition: all 0.7s;
+	}
+	.menu a{
+		color: white;
+		padding: 20px;
+		font-size: 25px;
+	}
+	.menu ul li{
+		float: none;
+		margin: 25px;
+	 	line-height: 30px;
+	 	margin-left:auto;
+	 	flex-direction: column;
+	}
+	.box{
+		float: none;
+		width: auto; 
+	}
+	#chk:checked ~ .menu{
+		margin: 0;
+		margin-left: -12px;
+		margin-top: -9px;
+	}
+}

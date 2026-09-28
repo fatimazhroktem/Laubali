@@ -1,0 +1,141 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #031321;
+	font-family: consolas;
+}
+.neon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ a{
+	text-decoration: none;
+	position: relative;
+	padding: 15px 30px;
+	color: #2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 2em;
+	overflow: hidden;
+}
+#neon:hover{
+	color:#255784;
+	background-color:  #2196f3;
+	box-shadow: 0 0 10px  #2196f3, 0 0 40px
+	 #2196f3,0 0 80px  #2196f3;
+	 transition-delay: 1s;
+}
+#neon span{
+	position: absolute;
+	display: block;
+}
+#neon span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent, #2196f3);
+}
+#neon:hover span:nth-child(1){
+	left: 100%;
+	transition: 1s;
+}
+#neon span:nth-child(2){
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent, #2196f3);
+}
+#neon:hover span:nth-child(2){
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+#neon span:nth-child(3){
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent, #2196f3);
+}
+#neon:hover span:nth-child(3){
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+#neon span:nth-child(4){
+	bottom:-100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent, #2196f3);
+}
+#neon:hover span:nth-child(4){
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
+.giris a{
+	border: 3px solid #3C8BB8;
+	color: #4caf50;
+	font-size: 16px;
+	padding: 20px;
+	letter-spacing: 2px;
+}
+.kayıt a{
+	border: 3px solid #3C8BB8;
+	max-height: 100px;
+	color: #4caf50;
+	font-size: 16px;
+	padding: 20px;
+	letter-spacing: 2px;
+}
+.giris{
+	justify-content: center;
+	text-align: center;
+	display: flex;
+}
+.kayıt{
+	justify-content: center;
+	text-align: center;
+	display: flex;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+svg{
+	display: block;
+	font: 8em 'Montserrat';
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+.text-copy{
+	fill: none;
+	stroke: white;
+	stroke-dasharray: 6% 29%;
+	stroke-width:5px;
+	stroke-dashoffset: 0%;
+	animation: stroke-offset 5.5s infinite linear;
+}
+.text-copy:nth-child(1){
+	stroke: #00ffdc;
+	animation-delay: -1s;
+}
+.text-copy:nth-child(2){
+	stroke: #D7D2D2;
+	animation-delay: -2s;
+}
+.text-copy:nth-child(3){
+	stroke: #763eff;
+	animation-delay: -3s;
+}
+
+@keyframes stroke-offset{
+	100%{
+		stroke-dashoffset: -35%;
+	}
+}
+@media screen and (max-width: )

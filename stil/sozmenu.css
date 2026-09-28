@@ -1,0 +1,138 @@
+header{
+	width: 100%;
+}
+.gorsel{
+	height: 600px;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-attachment:fixed;
+	justify-content:space-around;
+}
+header label{
+	display: none;
+	width: 32px;
+	height: 32px;
+	padding: 10px;
+	border-right: 1px solid #ffffff;
+}
+header i{
+	margin: 8px;
+	cursor: pointer;
+}
+nav.sticky{
+	transition: 0.7s;
+	padding: 5px 100px;
+	padding-bottom: 100px;
+	background-color: #333;
+	margin-left: 0;
+	height: 4vh;
+}
+nav.sticky ul li a{
+	color: white;
+	margin-bottom:20px;
+	transition: 1s;
+}
+nav.sticky ul li a:hover{
+	color: black;
+	background-color: white;
+}
+.menu ul li{
+	list-style-type: none;
+	float: left;
+}
+.menu{
+	transition: 0.7s;
+	height: 110px;
+	width:90%;
+	align-items: center;
+	margin-left: 8%;
+	margin-top: -7px;
+	line-height: 140px;
+	overflow: hidden;
+	position: fixed;
+}
+.menu a{
+	color: #E2D8D8;
+	font-size:20px;
+	margin-left:5px;	
+	padding:12px 5px;
+	font-family: 'Syne Mono', monospace;
+	text-shadow: 1px 3px 3px #5F5A5A;
+	transition: 0.04s;
+	text-decoration: none;
+}
+.menu a:hover{
+	background-color: #763B06;
+	color:white;
+	transition: 0.40s;
+	border-radius: 30%;
+}
+#chk{
+	display: none;
+}
+/*Tablet Görünümü*/
+@media screen and (max-width: 1200px){
+	header label{
+		display: block;
+		color: white;
+		float: right;
+	}
+	.menu{
+		position: absolute;
+		background-color:#55450D;
+		width: 30%;
+		height: 420px;
+		margin-top: -140%;
+		transition: all 0.7s;
+	}
+	.menu a{
+		color: white;
+		padding: 20px;
+		font-size: 23px;
+	}
+	.menu ul li{
+		float: none;
+		margin: 25px;
+	 	line-height: 30px;
+	 	margin-left: 10px;
+	 	flex-direction: column;
+	}
+	#chk:checked ~ .menu{
+		margin: 0;
+		margin-left: -12px;
+		margin-top: -9px;
+	}
+}
+	/*Cep Telefonu Görünümü*/
+	@media screen and (max-width:1000px){
+	header label{
+		display: block;
+		color: white;
+		float: right;
+	}
+	.menu{
+		position: absolute;
+		background-color:#55450D;
+		width: auto;
+		height: 420px;
+		margin-top: -140%;
+		transition: all 0.7s;
+	}
+	.menu a{
+		color: white;
+		padding: 20px;
+		font-size: 20px;
+	}
+	.menu ul li{
+		float: none;
+		margin: 25px;
+	 	line-height: 30px;
+	 	margin-left:auto;
+	 	flex-direction: column;
+	}
+	#chk:checked ~ .menu{
+		margin: 0;
+		margin-left: -12px;
+		margin-top: -9px;
+	}
+}

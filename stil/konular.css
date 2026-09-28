@@ -1,0 +1,897 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-indent: 24px;
+}
+a {
+	text-decoration: none;
+}
+h1 h2 h3 h4 h5 h6{
+	font-family: 'Playfair Display', serif;
+}
+mark{
+	margin-left: 17px;
+}
+.motto{
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	justify-content: center;
+	text-shadow: 1.5px 2px 4px black;
+	line-height: 45px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.text{
+	padding: 25px;
+	margin: 40px;
+	letter-spacing: 0.7px;
+	line-height: 25px;
+	text-shadow: 1.5px 1px 4px black;
+	border: 0.1px solid  #22a7ba;
+	border-radius: 15px;
+	box-shadow: 2px 2px 3px #7c0ee0;
+}
+.slider{
+	position: relative;
+	width: 500px;
+	height: 300px;
+	border: 1px solid #ccc;
+	margin: auto;
+	overflow: hidden;
+}
+.slider-content{
+	position: absolute;
+	width: 500%;
+	left: 0;
+	animation: slide 17s infinite;
+}
+.slider-content:hover{
+	animation-play-state: paused;
+}
+.slider-item{
+	width: 20%;
+	float: left;
+}
+.slider-item img{
+	width: 500px;
+	height: 300px;
+}
+@keyframes slide{
+	0%{
+		transform: translateX(0px);
+	}
+	10%{
+		transform: translateX(-500px);
+	}
+	20%{
+		transform: translateX(-500px);
+	}
+	30%{
+		transform: translateX(-1000px);
+	}
+	40%{
+		transform: translateX(-1000px);
+	}
+	50%{
+		transform: translateX(0px);
+	}
+}
+.devin-show-card {
+    animation: fade-in 0.4s 1s forwards ease-out;
+    background: #fff;
+    border-radius: 4em;
+    border: 0.25em solid #1fa756;
+    color: #1fa756;
+    font-size: 18px;
+    left: 10%;
+    line-height: 1.5;
+    opacity: 0;
+    padding: 1em 1em 1em 4em;
+    position: absolute;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    cursor: pointer;
+}
+
+.devin-show-card.hide {
+    animation: fade-out 0.4s forwards ease-out;
+}
+
+.devin-show-card img {
+    border-radius: 50%;
+    left: 0.3em;
+    position: absolute;
+    top: 0.25em;
+    width: 3em;
+}
+
+.devin-card {
+    top: calc(152% - 8em);
+    display: none;
+    height: 16em;
+    left: calc(17% - 10em);
+    position: absolute;
+    transition: all 0.4s 0.4s cubic-bezier(.5, .2, .43, 1.33);
+    width: 20em;
+}
+
+.close {
+    color: #aaa;
+    cursor: pointer;
+    height: 1em;
+    opacity: 0;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    width: 1em;
+    z-index: 10;
+}
+
+.details {
+    position: absolute;
+    bottom: 2.5em;
+    background: #fff;
+    border-radius: 0.25em;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 20em;
+}
+
+.name {
+    color: #333;
+    font-weight: bold;
+    opacity: 0;
+    margin: 3em 0 0;
+}
+
+.description {
+    color: #666;
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.5;
+    opacity: 0;
+    margin: 0.75em 2em 2em;
+}
+
+.headshot img {
+    border-radius: 50%;
+    border: 0.5em solid #fff;
+    display: block;
+    height: 6em;
+    margin: -3em auto 0.5em;
+    width: 6em;
+    opacity: 0;
+    transform: translateZ(0);
+}
+
+.icon-bar {
+    background: #1fa756;
+    border-radius: 0.25em;
+    height: 4em;
+    left: -1em;
+    position: absolute;
+    right: -1em;
+    top: 13em;
+}
+
+.icon-bar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+.icon-bar li {
+    display: inline-block;
+    font-size: 2em;
+    padding: 15px 2em;
+    opacity: 0;
+    width: 33%;
+}
+
+.icon-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.devin-card.show .details {
+    animation: show-detail-container 0.7s 0.55s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+.devin-card.show .name {
+    animation: fade-in 0.3s 1.3s forwards, pop-in 0.3s 1.3s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.devin-card.show .description {
+    animation: fade-in 0.3s 1.4s forwards, pop-in 0.3s 1.4s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.devin-card.show .headshot img {
+    animation: fade-in 0.4s 1.2s forwards, pop-in 0.6s 1.2s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.devin-card.show .icon-bar {
+    animation: show-icon-bar .5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.devin-card.show .icon-bar li {
+    animation: show-icon 0.5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.devin-card.show .icon-bar li:nth-child(1) {
+    animation-delay: 1.8s;
+}
+
+.devin-card.show .icon-bar li:nth-child(2) {
+    animation-delay: 1.9s;
+}
+.devin-card.show .close {
+    animation: fade-in 0.3s 1.3s forwards;
+}
+
+.devin-card.hide {
+    animation: drop-card 1s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show-icon-bar {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 4em;
+    }
+}
+
+@keyframes show-icon {
+    0% {
+        opacity: 0;
+        transform: rotateZ(-40deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes show-detail-container {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 13.5em;
+    }
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes drop-card {
+    100% {
+        bottom: -100%;
+        transform: rotateZ(20deg);
+        opacity: 0;
+    }
+}
+/*FERİS SHOW-CARD*/
+.feris-show-card {
+    animation: fade-in 0.4s 1s forwards ease-out;
+    background: #fff;
+    border-radius: 4em;
+    border: 0.25em solid #1fa756;
+    color: #1fa756;
+    font-size: 18px;
+    left: 24%;
+    line-height: 1.5;
+    opacity: 0;
+    padding: 1em 1em 1em 4em;
+    position: absolute;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    cursor: pointer;
+}
+
+.feris-show-card.hide {
+    animation: fade-out 0.4s forwards ease-out;
+}
+
+.feris-show-card img {
+    border-radius: 50%;
+    left: 0.3em;
+    position: absolute;
+    top: 0.25em;
+    width: 3em;
+}
+
+.feris-card {
+    top: calc(152% - 8em);
+    display: none;
+    height: 16em;
+    left: calc(30% - 10em);
+    position: absolute;
+    transition: all 0.4s 0.4s cubic-bezier(.5, .2, .43, 1.33);
+    width: 20em;
+}
+.feris-card.show .details {
+    animation: show-detail-container 0.7s 0.55s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+.feris-card.show .name {
+    animation: fade-in 0.3s 1.3s forwards, pop-in 0.3s 1.3s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.feris-card.show .description {
+    animation: fade-in 0.3s 1.4s forwards, pop-in 0.3s 1.4s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.feris-card.show .headshot img {
+    animation: fade-in 0.4s 1.2s forwards, pop-in 0.6s 1.2s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.feris-card.show .icon-bar {
+    animation: show-icon-bar .5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.feris-card.show .icon-bar li {
+    animation: show-icon 0.5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.feris-card.show .icon-bar li:nth-child(1) {
+    animation-delay: 1.8s;
+}
+
+.feris-card.show .icon-bar li:nth-child(2) {
+    animation-delay: 1.9s;
+}
+
+.feris-card.show .close {
+    animation: fade-in 0.3s 1.3s forwards;
+}
+
+.feris-card.hide {
+    animation: drop-card 1s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+/*MELWOVER SHOW-CARD*/
+
+.melwover-show-card {
+    animation: fade-in 0.4s 1s forwards ease-out;
+    background: #fff;
+    border-radius: 4em;
+    border: 0.25em solid #1fa756;
+    color: #1fa756;
+    font-size: 18px;
+    left: 40%;
+    line-height: 1.5;
+    opacity: 0;
+    padding: 1em 1em 1em 4em;
+    position: absolute;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    cursor: pointer;
+}
+
+.melwover-show-card.hide {
+    animation: fade-out 0.4s forwards ease-out;
+}
+
+.melwover-show-card img {
+    border-radius: 50%;
+    left: 0.3em;
+    position: absolute;
+    top: 0.25em;
+    width: 3em;
+}
+
+.melwover-card {
+    top: calc(152% - 8em);
+    display: none;
+    height: 16em;
+    left: calc(43% - 10em);
+    position: absolute;
+    transition: all 0.4s 0.4s cubic-bezier(.5, .2, .43, 1.33);
+    width: 20em;
+}
+.melwover-card.show .details {
+    animation: show-detail-container 0.7s 0.55s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+.melwover-card.show .name {
+    animation: fade-in 0.3s 1.3s forwards, pop-in 0.3s 1.3s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.melwover-card.show .description {
+    animation: fade-in 0.3s 1.4s forwards, pop-in 0.3s 1.4s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.melwover-card.show .headshot img {
+    animation: fade-in 0.4s 1.2s forwards, pop-in 0.6s 1.2s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.melwover-card.show .icon-bar {
+    animation: show-icon-bar .5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.melwover-card.show .icon-bar li {
+    animation: show-icon 0.5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.melwover-card.show .icon-bar li:nth-child(1) {
+    animation-delay: 1.8s;
+}
+
+.melwover-card.show .icon-bar li:nth-child(2) {
+    animation-delay: 1.9s;
+}
+
+.melwover-card.show .close {
+    animation: fade-in 0.3s 1.3s forwards;
+}
+
+.melwover-card.hide {
+    animation: drop-card 1s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+/*MESMA SHOW-CARD*/
+
+.mesma-show-card {
+    animation: fade-in 0.4s 1s forwards ease-out;
+    background: #fff;
+    border-radius: 4em;
+    border: 0.25em solid #1fa756;
+    color: #1fa756;
+    font-size: 18px;
+    left: 56%;
+    line-height: 1.5;
+    opacity: 0;
+    padding: 1em 1em 1em 4em;
+    position: absolute;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    cursor: pointer;
+}
+
+.mesma-show-card.hide {
+    animation: fade-out 0.4s forwards ease-out;
+}
+
+.mesma-show-card img {
+    border-radius: 50%;
+    left: 0.3em;
+    position: absolute;
+    top: 0.25em;
+    width: 3em;
+}
+
+.mesma-card {
+    top: calc(152% - 8em);
+    display: none;
+    height: 16em;
+    left: calc(58% - 10em);
+    position: absolute;
+    transition: all 0.4s 0.4s cubic-bezier(.5, .2, .43, 1.33);
+    width: 20em;
+}
+.mesma-card.show .details {
+    animation: show-detail-container 0.7s 0.55s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+.mesma-card.show .name {
+    animation: fade-in 0.3s 1.3s forwards, pop-in 0.3s 1.3s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.mesma-card.show .description {
+    animation: fade-in 0.3s 1.4s forwards, pop-in 0.3s 1.4s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.mesma-card.show .headshot img {
+    animation: fade-in 0.4s 1.2s forwards, pop-in 0.6s 1.2s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.mesma-card.show .icon-bar {
+    animation: show-icon-bar .5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.mesma-card.show .icon-bar li {
+    animation: show-icon 0.5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.mesma-card.show .icon-bar li:nth-child(1) {
+    animation-delay: 1.8s;
+}
+
+.mesma-card.show .icon-bar li:nth-child(2) {
+    animation-delay: 1.9s;
+}
+
+.mesma-card.show .close {
+    animation: fade-in 0.3s 1.3s forwards;
+}
+
+.mesma-card.hide {
+    animation: drop-card 1s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+/*SÜMEYYE SHOW-CARD*/
+
+.sumeyye-show-card {
+    animation: fade-in 0.4s 1s forwards ease-out;
+    background: #fff;
+    border-radius: 4em;
+    border: 0.25em solid #1fa756;
+    color: #1fa756;
+    font-size: 18px;
+    left: 72%;
+    line-height: 1.5;
+    opacity: 0;
+    padding: 1em 1em 1em 4em;
+    position: absolute;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    cursor: pointer;
+}
+
+.sumeyye-show-card.hide {
+    animation: fade-out 0.4s forwards ease-out;
+}
+
+.sumeyye-show-card img {
+    border-radius: 50%;
+    left: 0.3em;
+    position: absolute;
+    top: 0.25em;
+    width: 3em;
+}
+
+.sumeyye-card {
+    top: calc(152% - 8em);
+    display: none;
+    height: 16em;
+    left: calc(72% - 10em);
+    position: absolute;
+    transition: all 0.4s 0.4s cubic-bezier(.5, .2, .43, 1.33);
+    width: 20em;
+}
+.sumeyye-card.show .details {
+    animation: show-detail-container 0.7s 0.55s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+
+.sumeyye-card.show .name {
+    animation: fade-in 0.3s 1.3s forwards, pop-in 0.3s 1.3s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.sumeyye-card.show .description {
+    animation: fade-in 0.3s 1.4s forwards, pop-in 0.3s 1.4s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.sumeyye-card.show .headshot img {
+    animation: fade-in 0.4s 1.2s forwards, pop-in 0.6s 1.2s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.sumeyye-card.show .icon-bar {
+    animation: show-icon-bar .5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.sumeyye-card.show .icon-bar li {
+    animation: show-icon 0.5s forwards cubic-bezier(.64, 1.87, .64, .64);
+}
+
+.sumeyye-card.show .icon-bar li:nth-child(1) {
+    animation-delay: 1.8s;
+}
+
+.sumeyye-card.show .icon-bar li:nth-child(2) {
+    animation-delay: 1.9s;
+}
+
+.sumeyye-card.show .close {
+    animation: fade-in 0.3s 1.3s forwards;
+}
+
+.sumeyye-card.hide {
+    animation: drop-card 1s forwards cubic-bezier(.54, -0.38, .34, 1.42);
+}
+@media screen and (max-width: 1150px){
+    .devin-show-card {
+        left: 10%;
+    }
+    .feris-show-card {
+        left: 25%;
+    }
+    .melwover-show-card {
+        left: 42%;
+    }
+    .mesma-show-card {
+        left: 60%;
+    } 
+    .sumeyye-show-card {
+        left: 78%;
+    }
+    .devin-card {
+        left: calc(15% - 10em);
+        top: calc(141% - 8em);
+    } 
+    .feris-card {
+        left: calc(30% - 10em);
+        top: calc(141% - 8em);
+    } 
+    .melwover-card {
+        left: calc(44% - 10em);
+        top: calc(141% - 8em);
+    }
+     .mesma-card {
+        left: calc(65% - 10em);
+        top: calc(141% - 8em);
+    }
+    .sumeyye-card {
+        left: calc(80% - 10em);
+        top: calc(141% - 8em);
+    } 
+}
+@media screen and (max-width: 1000px){
+    .devin-show-card {
+        left: 7%;
+        font-size: 17px;
+    }
+    .feris-show-card {
+        left: 23%;
+        font-size: 17px;
+    }
+    .melwover-show-card {
+        left: 42%;
+        font-size: 17px;
+    }
+    .mesma-show-card {
+        left: 62%;
+        font-size: 17px;
+    }
+    .sumeyye-show-card {
+        left: 81%;
+        font-size: 17px;
+    }
+    .devin-card {
+        left: calc(15% - 10em);
+        top: calc(160% - 8em);
+        height: 16em;
+        width: 16em;
+    } 
+    .feris-card {
+        left: calc(30% - 10em);
+        top: calc(160% - 8em);
+        height: 16em;
+        width: 16em;
+    } 
+    .melwover-card {
+        left: calc(44% - 10em);
+        top: calc(160% - 8em);
+        height: 16em;
+        width: 16em;
+    }
+     .mesma-card {
+        left: calc(65% - 10em);
+        top: calc(160% - 8em);
+        height: 16em;
+        width: 16em;
+    }
+    .sumeyye-card {
+        left: calc(86% - 10em);
+        top: calc(160% - 8em);
+        height: 16em;
+        width: 16em;
+    }
+    .details{
+        width: 16em;
+        }
+    .icon-bar li {
+    padding: 15px 1em;
+}
+}
+@media screen and (max-width: 870px){
+    .devin-show-card {
+        left: 7%;
+        font-size: 15px;
+    }
+    .feris-show-card {
+        left: 23%;
+        font-size: 15px;
+    }
+    .melwover-show-card {
+        left: 41%;
+        font-size: 15px;
+    }
+    .mesma-show-card {
+        left: 60%;
+        font-size: 15px;
+    } 
+    .sumeyye-show-card {
+        left: 79%;
+        font-size: 15px;
+    }
+    .devin-card {
+        left: calc(15% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 16em;
+    } 
+    .feris-card {
+        left: calc(30% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 16em;
+    } 
+    .melwover-card {
+        left: calc(44% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 16em;
+    }
+    .mesma-card {
+        left: calc(65% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 16em;
+    }
+    .sumeyye-card {
+        left: calc(85% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 16em;
+    }
+  .details{
+        width: 16em;
+        }
+    .icon-bar li {
+    padding: 15px 1em;
+}
+}
+@media screen and (max-width: 790px){
+  .devin-show-card {
+        left: 7%;
+        font-size: 14px;
+    }
+    .feris-show-card {
+        left: 25%;
+        font-size: 14px;
+    }
+    .melwover-show-card {
+        left: 46%;
+        font-size: 14px;
+    }
+    .mesma-show-card {
+        left: 68%;
+        font-size: 14px;
+    }
+    .sumeyye-show-card {
+        left: 89%;
+        font-size: 14px;
+    }
+    .devin-card {
+        left: calc(20% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 13em;
+    } 
+    .feris-card {
+        left: calc(30% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 13em;
+    } 
+    .melwover-card {
+        left: calc(52% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 13em;
+    }
+     .mesma-card {
+        left: calc(80% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 13em;
+    }
+     .sumeyye-card {
+        left: calc(90% - 10em);
+        top: calc(141% - 8em);
+        height: 16em;
+        width: 13em;
+    }
+    .details{
+        width: 13em;
+        }
+    .icon-bar li {
+    padding: 15px 1em;
+}
+}
+@media screen and (max-width: 620px){
+    .devin-show-card {
+        left: 15%;
+        font-size: 16px;
+        top: 155%;
+    }
+    .feris-show-card {
+        left: 15%;
+        font-size: 16px;
+        top: 167%;
+    }
+    .melwover-show-card {
+        left: 50%;
+        font-size: 16px;
+        top: 155%;
+    }
+    .mesma-show-card {
+        left: 50%;
+        font-size: 16px;
+        top: 167%;
+    } 
+    .sumeyye-show-card {
+        left: 20%;
+        font-size: 16px;
+        top: 180%;
+    }
+    .devin-card {
+        left: calc(30% - 10em);
+        top: calc(140% - 8em);
+        height: 16em;
+        width: 13em;
+    } 
+    .feris-card {
+        left: calc(30% - 10em);
+        top: calc(155% - 8em);
+        height: 16em;
+        width: 13em;
+    } 
+    .melwover-card {
+        left: calc(80% - 10em);
+        top: calc(140% - 8em);
+        height: 16em;
+        width: 13em;
+    }
+     .mesma-card {
+        left: calc(80% - 10em);
+        top: calc(155% - 8em);
+        height: 16em;
+        width: 13em;
+    }
+       .sumeyye-card {
+        left: calc(33% - 10em);
+        top: calc(171% - 8em);
+        height: 16em;
+        width: 13em;
+    }
+  .details{
+        width: 13em;
+        }
+    .icon-bar li {
+    padding: 15px 1em;
+}
+}

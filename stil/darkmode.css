@@ -1,0 +1,561 @@
+/*Dark Mode*/
+body{
+	background-color: white;
+	color: #222;
+	transition: 300ms all;
+}
+body.dark{
+background: #222;
+color:#fff;
+}
+.mode-control span{
+	display: inline-block;
+	padding: 0 20px;
+	line-height: 30px;
+	border-radius: 30px;
+	background-color: #222;
+	color: #fff;
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+}
+body.dark .mode-control span{
+	background-color: #fff;
+	color: #222;
+	cursor: pointer;
+}
+.mode-control input{
+	position: absolute;
+	opacity: 0;
+}
+.mode-control span:nth-of-type(2){
+	display: none;
+}
+.mode-control input:checked + span{
+	display: none;
+}
+.mode-control input:checked + span + span{
+	display: inline-block;
+}
+
+body.dark .text a{
+color: #CF092A;
+}
+body.dark .text h2{
+color: #1154DB;
+}	
+body.dark .motto{
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	justify-content: center;
+	color: white;
+	text-shadow: 2px 2px 2px #9E9B9B;
+	line-height: 45px;
+}
+body.dark .text{
+ padding: 25px;
+ margin: 40px;
+ letter-spacing: 0.7px;
+ line-height: 25px;
+ text-shadow: 1.2px 1.2px 3px darkgreen;
+ border: 0.1px solid yellow;
+ border-radius: 15px;
+ box-shadow: 2px 2px 3px aqua;
+}
+body.dark .eski{
+color: aqua;
+}
+body.dark .melwover a{
+color: #0EF149;
+}
+body.dark .devin a{
+color: #0DD7BD;
+}
+body.dark figure{
+	color: #E6EE0E;
+}
+body.dark .phptitle{
+	color: #51F2BF;
+}
+body.dark .menu a{
+	color: white;
+}
+body.dark .classes {
+	background: #333;
+	height: 55px;
+	width: 80%;
+	padding: 20px;
+	margin:20px;
+	border: 1px solid #ffff00;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+}
+body.dark .classes a{
+	color: #E5E522;
+	font-size: 18px;
+	margin: 3px;
+	width: 20px;
+	transition: 0.7s all;
+}
+body.dark .classes a:hover{
+	text-decoration: underline;
+	font-size: 21px;
+	margin: 10px 0;
+	transition: 0.7s all;
+	color: #FFFC00;
+}
+body.dark .classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 54em;
+	margin-top: -74px;
+}
+body.dark .classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 60em;
+	margin-top: -103px;
+}
+body.dark .mottoeski{
+	font-size: 30px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	justify-content: center;
+	color: white;
+	text-shadow: 1.5px 2px 4px white;
+	line-height: 45px;
+}
+body.dark .yorum table span{
+	color: #0ED278;
+	background: none;
+	font-size: 16px;
+	font-weight: bold;
+	border:1.5px solid rgba(255,255,255,.9);
+	box-shadow: rgba(255,255,255,.1) 2px 1.5px 0.2px 0.2px;
+	padding: 5px 6px;
+	text-shadow: rgba(255,255,255,.1) 2px 1.5px 0.2px 0.2px;
+	border-radius: 5px;
+}
+body.dark .yanıtlar form .btn{
+	background: none;
+	color: #AFA7A7;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px 7px;
+	border: 2px solid #4caf50;
+	margin: 3px 0;
+	border-radius: 5px;
+	width: 92%;
+}
+body.dark .yorum table p{
+	color: rgba(255,255,255,.9);
+	font-size: 15px;
+	padding: 2px;
+	margin-left: 320px;
+	margin-top: 20px;
+}
+body.dark .yorum a{
+	color:   white;
+	font-size: 15px;
+}
+body.dark .yorum{
+	width: 85%;
+	box-sizing: border-box;
+	margin: 5px auto;
+	text-align: center;
+}	
+body.dark .yorum_icerik{
+	background: none;
+	width: 50%;
+	padding: 3px 6px;
+	margin: 15px 190px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+body.dark #username{
+	background: none;
+	width: 50%;
+	padding: 3px 6px;
+	margin: -10px 190px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+body.dark #username::placeholder{
+	color: rgba(255,255,255,.9);
+}
+body.dark .comments > li{
+		width: auto;
+		margin: 30px 0;
+		padding: 10px 20px;
+		font-size: 16px;
+		border: 2px solid white;	
+		border-radius: 6px;
+		color: rgba(255,255,255,.9);
+	}
+body.dark .yanıtlar .btn{
+	width: 25%;
+	margin:5px 330px;
+	background: none;
+	color: white;
+	font-family: 'Jura', sans-serif;
+}
+body.dark .post{
+	text-align: center;
+	justify-content: center;
+
+}
+body.dark .post p{
+	float: left;
+	margin: 10px 20px;
+	margin-left: 100px;
+	color: rgb(255,255,255,.8);
+}
+body.dark .post h3 {
+	color: transparent;
+	-webkit-text-stroke: 1.1px #4ecaa2;
+	margin-left: -150px;
+	padding: 10px;
+	letter-spacing: 2px;
+}
+body.dark .anapost p{
+	color: transparent;
+	-webkit-text-stroke:1px white;
+}
+@media screen and (max-width: 1200px){
+	body.dark .yorum{
+	width: 78%;
+	margin: 5px 110px;
+	text-align: center;
+}
+	body.dark .yorum table span{
+	font-size: 18px;
+	background: none;
+	border:none;
+	box-shadow: none;	
+	}
+	body.dark .yorum table p{
+	font-size: 16px;
+	margin-left: 170px;
+	margin-top: 20px;
+	}
+	body.dark .yorum a{
+	margin-left: 130px;
+	font-size: 16px;
+	}
+	body.dark .zaman{
+	font-size: 14px;
+	margin-left: 10px;
+}
+	body.dark .post p{
+	font-size: 14px;
+	margin: 5px;
+	padding: 5px 10px;
+}
+	body.dark .yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: none;
+	color: white;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .like{
+	margin: 100px 10px -120px 350px;
+}
+	body.dark .yorum_icerik{
+	background:none;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 0px -100px -100px -110px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark #username{
+	background: none;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px 0px -110px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .comments > li{
+	width: 800px;
+	margin: 30px 0 0 -350px;
+	color: white;
+	}
+	body.dark .classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 47em;
+	margin-top: -74px;
+}
+	body.dark .classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 53em;
+	margin-top: -103px;
+}
+}
+@media screen and (max-width: 1150px){
+	body.dark .yorum{
+	width: 80%;
+	margin: 5px 90px;
+	text-align: center;
+}
+	body.dark .yorum table span{
+	font-size: 18px;
+	background: none;
+	border:none;
+	box-shadow: none;	
+	}
+	body.dark .yorum table p{
+	font-size: 16px;
+	margin-left: 80px;
+	margin-top: 20px;
+	}
+	body.dark .yorum a{
+	margin-left: 40px;
+	font-size: 16px;
+	}
+	body.dark .zaman{
+	font-size: 14px;
+	margin-left: 10px;
+}
+	body.dark .yanıtlar .btn{
+	width: 25%;
+	margin:5px 330px;
+	background: none;
+	color: white;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .post p{
+	font-size: 16px;
+	margin: 5px;
+	padding: 5px 10px;
+}
+	body.dark .yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: none;
+	color: white;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .like{
+	margin: 100px 10px -120px 350px;
+}
+	body.dark .yorum_icerik{
+	background: none;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 0px -100px -100px -110px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark #username{
+	background: none;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px 0px -110px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .comments > li{
+	width: 800px;
+	margin: 30px 0 0 -350px;
+	color: white;
+	}
+	body.dark .classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 33em;
+	margin-top: -74px;
+}
+	body.dark .classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 39em;
+	margin-top: -103px;
+}
+}
+@media screen and (max-width: 870px){
+	body.dark .yorum{
+	width: 95%;
+	margin: 5px 10px;
+	text-align: center;
+}
+	body.dark .yorum table span{
+	font-size: 17px;
+	background: none;
+	border:none;
+	box-shadow: none;	
+	}
+	body.dark .yorum table p{
+	font-size: 15px;
+	margin-left: 80px;
+	margin-top: 20px;
+	}
+	body.dark .yorum a{
+	margin-left: 40px;
+	font-size: 15px;
+	}
+	body.dark .zaman{
+	font-size: 14px;
+	margin-left: 10px;
+}
+	body.dark .post p{
+	font-size: 14px;
+	margin: 5px;
+	padding: 5px 10px;
+}
+	body.dark .yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: none;
+	color: white;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .like{
+	margin: 100px 10px -120px 110px;
+}
+	body.dark .yorum_icerik{
+	background: none;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 0px -100px -100px -110px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark #username{
+	background: none;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px -10px -110px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .comments > li{
+	width: 540px;
+	margin: 30px 0 0 -350px;
+	color: white;
+	}
+	body.dark .classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 19em;
+	margin-top: -74px;
+}
+	body.dark .classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 25em;
+	margin-top: -103px;
+}
+	}
+@media screen and (max-width: 620px){
+  	body.dark .yorum table span{
+		font-size: 15px;
+		background: none;
+		border:none;
+		box-shadow: none;	
+	}
+	body.dark .yorum table p{
+		font-size: 13px;
+		margin-left: 80px;
+		margin-top: 20px;
+	}
+	body.dark .yorum a{
+		margin-left: 40px;
+		font-size: 13px;
+	}
+	body.dark .zaman{
+	font-size: 14px;
+	margin-left: 10px;
+}
+	body.dark .post p{
+	font-size: 14px;
+	margin: 5px;
+	padding: 5px 10px;
+}
+	body.dark .yanıtlar .btn{
+	width: 55%;
+	margin: 125px 5px 0 0;
+	margin-left: -95px;
+	background: none;
+	color: white;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .like{
+	margin: 100px 10px -120px 0px;
+}
+	body.dark .yorum_icerik{
+	background: none;
+	width: 85%;
+	padding: 3px 6px;
+	margin: 80px -100px -100px -240px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark #username{
+	background: none;
+	width: 80%;
+	padding: 3px 6px;
+	margin: -10px 10px -10px -110px;
+	border: 2px solid #4caf50;
+	color: #7d4fda;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,.6) 2px 1.5px 0.2px 0.2px;
+	font-family: 'Jura', sans-serif;
+}
+	body.dark .comments > li{
+	width: 340px;
+	margin: 30px 0 0 -350px;
+	color: white;
+	}
+	body.dark .classes #bir{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 11em;
+	margin-top: -74px;
+}
+	body.dark .classes #iki{
+	width: 96px;
+	height: 95px;
+	border-radius: 20px;
+	margin-left: 17em;
+	margin-top: -103px;
+}
+}
